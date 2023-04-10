@@ -8,7 +8,10 @@ export default class App extends Component {
   state = { query: "" }
 
   onQuerySubmit = (query) => {
-    console.log(query)
+    this.setState({ query }, () => {
+      console.log(this.state.query)
+    })
+
   }
 
   render() {
