@@ -7,20 +7,18 @@ import SearchBar from "./components/SearchBar";
 
 export default class App extends Component {
 
-  state = { query: "" }
+  state = { videos: [] }
 
   onQuerySubmit = async (query) => {
-    this.setState({ query }, () => {
-      console.log(this.state.query)
-    });
-
     const res = await youtube.get("/search", {
       params: {
         q: query
       }
     })
 
-    console.log(res);
+    this.setState({ videos: res.data.items }, () => {
+      console.log(this.state.videos);
+    })
 
   }
 
