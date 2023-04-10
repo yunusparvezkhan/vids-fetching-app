@@ -16,9 +16,7 @@ export default class App extends Component {
       }
     })
 
-    this.setState({ videos: res.data.items }, () => {
-      console.log(this.state.videos);
-    })
+    this.setState({ videos: res.data.items })
 
   }
 
