@@ -5,10 +5,16 @@ import SearchBar from "./components/SearchBar";
 
 export default class App extends Component {
 
+  state = { query: "" }
+
+  onQuerySubmit = (query) => {
+    console.log(query)
+  }
+
   render() {
     return (
       <div className='container ui'>
-        <SearchBar />
+        <SearchBar onQuerySubmit={this.onQuerySubmit} />
       </div>
     )
   }

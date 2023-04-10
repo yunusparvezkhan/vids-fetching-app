@@ -7,6 +7,7 @@ export default class SearchBar extends Component {
     onSearchSubmit = event => {
         event.preventDefault();
         // send search query to parent
+        this.props.onQuerySubmit(this.state.query);
     }
 
     render() {
