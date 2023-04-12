@@ -4,3 +4,5 @@ On this launch the app contains a search bar, very much like pics-fetching-app (
 ## Version 1.1
 On this launch the max number of results is increased to 50. That means now new searches will get back 50 results from the YouTube API. However it is important to note that it is not neccessary that 50 video will render on each time, because search results contains other types than videos, which are filtered out in this app, hence the video results depends on the search.
 A new functionality also has been added to the app such that whenever a thumbnail or title is clicked, the window scrolls back to top. 
+
+
