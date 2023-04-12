@@ -7,7 +7,10 @@ const VideoPreview = ({ vid }) => {
     console.log("succesfull")
     return (
         <div className="VideoPreviewContainer"  >
-            <img src={vid.snippet.thumbnails.high.url} />
+            {/* <img src={vid.snippet.thumbnails.high.url} /> */}
+            <div className='ui embed'>
+                <iframe src={`https://youtube.com/embed/${vid.id.videoId}`} />
+            </div>
             <div className='ui segment'>
                 <h4>{vid.snippet.title}</h4>
                 <p>{vid.snippet.description}</p>
