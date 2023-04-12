@@ -13,3 +13,12 @@
 .content-container {
     cursor: pointer;
 }
+
+.vid-header {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.content-container p {
+    margin-top: 10px;
+}
