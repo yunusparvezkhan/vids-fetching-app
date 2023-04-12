@@ -18,7 +18,7 @@ export default class App extends Component {
       }
     })
 
-    this.setState({ videos: res.data.items })
+    this.setState({ videos: res.data.items, selectedVideo: null })
 
   }
 
