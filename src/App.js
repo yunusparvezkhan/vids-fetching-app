@@ -24,7 +24,10 @@ export default class App extends Component {
 
   onVideoSelect = (video) => {
     this.setState({ selectedVideo: video })
+    window.scrollTo(0, 0)
   }
+
+
 
   render() {
     return (
