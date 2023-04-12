@@ -13,6 +13,7 @@ const VideoPreview = ({ vid }) => {
             </div>
             <div className='ui segment'>
                 <h4>{vid.snippet.title}</h4>
+                <b><span>{vid.snippet.channelTitle}</span></b>
                 <p>{vid.snippet.description}</p>
             </div>
         </div>
