@@ -1,0 +1,2 @@
+### Version 1
+On this launch the app contains a search bar, very much like pics-fetching-app (https://github.com/yunusparvezkhan.pics-fetching-app). When user submits a search request, the app requests videos from youtube video api v3 and maps them on the screen. When any video title/thumbnail is clicked, a new section emerges from top containing a youtube video player, the video title, channel name, video description. Folks can use this app on their local environment to avoid ads, as CORS policy blocks the ads. 
